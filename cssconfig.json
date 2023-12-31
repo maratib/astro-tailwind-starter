@@ -1,0 +1,11 @@
+{
+  "globalCssFiles": [
+    "./src/style.css"
+  ],
+  "include": [
+    "**/*.{vue,tsx,astro}"
+  ],
+  "exclude": [
+    "**/*.html"
+  ]
+}

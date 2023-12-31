@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: system-ui, sans-serif;
+		/* background: #13151a; */
+		background-size: 224px;
+    /* color: white; */
+}
+
+h1 {
+  @apply text-6xl font-bold 
+}
+
+.astro-gradient {
+  @apply bg-gradient-to-r from-purple-800 via-purple-400 to-purple-300 inline-block text-transparent bg-clip-text
+}
+
+
