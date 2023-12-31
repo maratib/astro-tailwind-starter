@@ -59,5 +59,32 @@ body {
 import "../styles.css";
 ---
 ```
+## Adding Sitemap
+```bash
+yarn astro add sitemap
+# To generate sitemap
+yarn build
+# To see /sitemap-index.xml
+yarn preview 
+```
+```javascript
+// add to astro.config.mjs
+import { defineConfig } from 'astro/config';
+import sitemap from '@astrojs/sitemap';
+
+export default defineConfig({
+  // ...
+  + site: 'https://stargazers.club',
+  integrations: [sitemap()],
+});
+```
+```bash
+#  add ./public/robots.txt
+
+User-agent: *
+Allow: /
+
+Sitemap: https://<SITE-NAME>/sitemap-index.xml
+```
 
 Done :blush:
